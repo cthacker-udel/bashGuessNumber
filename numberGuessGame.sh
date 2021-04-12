@@ -26,14 +26,14 @@ while [ $loopCondition -eq 1 ] ; do
     if [ $your_guess -eq $randomNumber -a $computerGuess -eq $randomNumber ]; then
         ((yourscore++))
         ((computerscore++))
-        echo -e "The random number was $randomNumber\n"
+        echo -e "The random number was ${randomNumber}\n"
     elif [ $your_guess -eq $randomNumber -a $computerGuess -ne $randomNumber ]; then
         ((yourscore++))
-        echo -e "The random number was $randomnumber\n"
+        echo -e "The random number was ${randomnumber}\n"
     elif [ $your_guess -ne $randomNumber -a $computerGuess -eq $randomNumber ]; then
         ((computerscore++))
-        echo -e "\nThe random number was $randomnumber\n"
+        echo -e "\nThe random number was ${randomnumber}\n"
     else
-        echo "\nThe random number was $randomNumber\n"
+        echo "\nThe random number was ${randomNumber}\n"
     fi
 done
