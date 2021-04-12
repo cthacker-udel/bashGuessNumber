@@ -11,15 +11,15 @@ echo -e "\n RULES : Random number will be generated each round, the computer wil
 yourscore=0
 computerscore=0
 
-read -p "\n Guess a random number between x and y, type in x : >>> " x
-read -p "\n Now Type in y : >>>  " y
+read -p "Guess a random number between x and y, type in x : >>> " x
+read -p "Now Type in y : >>>  " y
 
 loopCondition=1
 
 
 while [ $loopCondition -eq 1 ] ; do
-    echo -e "Guessing number --- "
-    sleep 1
+    echo -e "\n\nGuessing number --- \n\n"
+    sleep 3
     randomNumber=$((x + $RANDOM % y))
     computerGuess=$((x + $RANDOM % y))
     read -p "\nYour guess?\n" your_guess
