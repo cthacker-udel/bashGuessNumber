@@ -22,7 +22,7 @@ while [ $loopCondition -eq 1 ] ; do
     sleep 3
     randomNumber=$((x + $RANDOM % y))
     computerGuess=$((x + $RANDOM % y))
-    read -p "\nYour guess?\n" your_guess
+    read -p "Your guess?" your_guess
     if [ $your_guess -eq $randomNumber -a $computerGuess -eq $randomNumber ]; then
         ((yourscore++))
         ((computerscore++))
