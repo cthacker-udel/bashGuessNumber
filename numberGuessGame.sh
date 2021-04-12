@@ -55,3 +55,12 @@ while [ $loopCondition -eq 1 ] ; do
         echo -e "\nThe random number was ${randomNumber}\n"
     fi
 done
+
+
+if [ $computerscore -gt $yourscore ]; then
+    echo -e "~=~=~= RESULTS ~=~=~= \n COMPUTER WINS! \n Your score : $yourscore \n Computer score : $computerscore"
+elif [ $yourscore -gt $computerscore ]; then
+    echo -e "~=~=~= RESULTS ~=~=~= \n YOU WIN! \n Your score : $yourscore \n Computer score : $computerscore"
+else
+    echo -e "~=~=~= RESULTS ~=~=~= \n TIE! \n Your score : $yourscore \n Computer score : $computerscore"
+fi
