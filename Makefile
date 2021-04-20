@@ -1,0 +1,2 @@
+%: %.sh
+	chmod +x $*.sh
